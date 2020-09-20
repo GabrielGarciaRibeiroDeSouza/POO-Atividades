@@ -16,18 +16,20 @@ namespace MediaSalarial
 
             double media;
 
-            Console.WriteLine("Digite o nome da primeira pessoa: ");
+            Console.WriteLine("DADOS DO PRIMEIRO FUNCIONARIO: ");
+            Console.WriteLine("Nome:");
             A.Nome = Console.ReadLine();
-            Console.WriteLine("Digite a idade da primeira pessoa: ");
+            Console.WriteLine("Digite o salario da primeira pessoa: ");
             A.Salario = Double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
             Console.WriteLine("nome: " + A.Nome.ToString() + "| Salario R$" + A.Salario.ToString("F2", CultureInfo.InvariantCulture));
             Console.WriteLine("_________________________________________________________");
 
 
 
-            Console.WriteLine("Digite o nome da segunda pessoa: ");
+            Console.WriteLine("DADOS DO SEGUNDO FUNCIONARIO: ");
+            Console.WriteLine("Nome:");
             B.Nome = Console.ReadLine();
-            Console.WriteLine("Digite a idade da segunda pessoa: ");
+            Console.WriteLine("Digite o salario da segunda pessoa: ");
             B.Salario = Double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
             Console.WriteLine("nome: " + B.Nome.ToString() + "| Salario R$" + B.Salario.ToString("F2", CultureInfo.InvariantCulture));
             Console.WriteLine("_________________________________________________________");
