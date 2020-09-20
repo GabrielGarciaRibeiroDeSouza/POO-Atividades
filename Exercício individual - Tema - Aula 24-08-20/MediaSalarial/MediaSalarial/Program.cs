@@ -9,12 +9,11 @@ namespace MediaSalarial
 
         static void Main(string[] args)
         {
-            MediaSalario A, B;
+            MediaSalario A, B, MediaSalaraial;
 
             A = new MediaSalario();
             B = new MediaSalario();
-
-            double media;
+            MediaSalaraial = new MediaSalario();
 
             Console.WriteLine("DADOS DO PRIMEIRO FUNCIONARIO: ");
             Console.WriteLine("Nome:");
@@ -34,10 +33,9 @@ namespace MediaSalarial
             Console.WriteLine("nome: " + B.Nome.ToString() + "| Salario R$" + B.Salario.ToString("F2", CultureInfo.InvariantCulture));
             Console.WriteLine("_________________________________________________________");
 
-            media = A.Salario + B.Salario;
-            media = media / 2;
+            MediaSalaraial.Media(A.Salario,B.Salario);
 
-            Console.WriteLine("A média Salarial é de R$" + media.ToString() + ",00");
+            Console.WriteLine("A média Salarial é de R$" + MediaSalaraial.media + ",00");
 
             
         }
