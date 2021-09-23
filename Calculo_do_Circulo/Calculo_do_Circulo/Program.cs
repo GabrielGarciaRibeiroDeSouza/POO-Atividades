@@ -8,7 +8,7 @@ namespace Calculo_do_Circulo
         
         static void Main(string[] args)
         {
-            //GG
+            //GG_non
             //declara a variavel calc para instanciar a classe calculadora.
             calculadora calc = new calculadora();
             
