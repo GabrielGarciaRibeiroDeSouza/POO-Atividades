@@ -7,6 +7,10 @@ namespace ArrayClasse
     {
         static void Main(string[] args)
         {
+            //faz a instancia do objeto
+            Media media;
+            media = new Media();
+
             //texto para deixar a interface amigavel
             Console.WriteLine("Insera a quantidade de pessoas: ");
 
@@ -21,18 +25,13 @@ namespace ArrayClasse
             {
                 vect[i] = double.Parse(Console.ReadLine(),CultureInfo.InvariantCulture);
             }
-            
-            //variavel para fazer a soma
-            double soma = 0;
-            
-            //um for para fazer a soma dos valores
-            for(int i = 0; i < n; i++)
-            {
-                soma += vect[i];
-            }
 
-            //faz a média e mostra o valor
-            Console.WriteLine("a média é de: " + (soma / n).ToString( "F2", CultureInfo.InvariantCulture));
+            //chama a função de fazer a media da classe Media
+            media.Somaste(n, vect);
+            
+
+            //imprime o resultado
+            Console.WriteLine("a média é de: " + media.result.ToString( "F2", CultureInfo.InvariantCulture));
         }
     }
 }
