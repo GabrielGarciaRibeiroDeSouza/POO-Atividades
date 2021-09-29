@@ -7,7 +7,7 @@ namespace ArrayClasse
     {
         static void Main(string[] args)
         {
-            //texto para deixar a interface amigavel
+            //texto para deixar a interface amigavel 
             Console.WriteLine("Insera a quantidade de pessoas: ");
 
             //variavel para o usuario inserir o valor da quantidade de pessoas
