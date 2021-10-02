@@ -9,40 +9,66 @@ namespace ControleEstoque
     {
         //prop
         //Delcaração de variaveis
-        public string Nome;
-        public double Preco;
-        public int Quantidade;
+        private string _nome;
+        private double _preco;
+        private int _quantidade;
 
-        //cria o construtor com 3 paramaetros, sendo eles os mesmos nomes das variaveis só que em minusculo
+        //cria o construtor com 3 paramaetros
         public Produto ( string nome, double preco, int quantidada)
         {
-            Nome = nome;
-            Preco = preco;
-            Quantidade = quantidada;
+            _nome = nome;
+            _preco = preco;
+            _quantidade = quantidada;
+        }
+
+        //get e set do nome
+        public string Nome
+        {
+            get { return _nome;}
+            set 
+            {
+                if(value != null && value.Length > 1)
+                {
+                    _nome = value;
+                }
+                 
+            }
+        }
+
+        //get do preço
+        public double Preco
+        {
+            get { return _preco; }
+        }
+
+        //get da quantidade
+        public int Quantidade
+        {
+            get { return _quantidade; }
         }
 
         //função para calculo do valor em estoque
         public double ValorTotalEmEstoque()
         {
-            return Preco * Quantidade;
+            return _preco * _quantidade;
         }
 
         //função para adicionar produtos ao estoque
         public void AdicionarProduto(int quantidade)
         {
-            Quantidade += quantidade;
+            _quantidade += quantidade;
         }
 
         // função para remover produtos do estoque
         public void RemoverProduto(int quantidade)
         {
-            Quantidade = Quantidade - quantidade;
+            _quantidade = _quantidade - quantidade;
         }
 
         //função para mostrar o nome, quantidade e preco do estoque atual.
         public override string ToString()
         {
-            return Nome + ", R$ " + Preco.ToString("F2", CultureInfo.InvariantCulture) + ", " + Quantidade 
+            return _nome + ", R$ " + _preco.ToString("F2", CultureInfo.InvariantCulture) + ", " + _quantidade 
             + " unidades, Total: R$ "+ ValorTotalEmEstoque().ToString("F2", CultureInfo.InvariantCulture);
         }
     }
