@@ -7,6 +7,7 @@ namespace ControleEstoque
     {
         static void Main(string[] args)
         {
+            //prop
             /*esse bloco recebe os dados do usuario. Vale ressaltar que os "=" e "_" são para deixar a
              visulização no console mais organizada. */
             Console.WriteLine("===================================");

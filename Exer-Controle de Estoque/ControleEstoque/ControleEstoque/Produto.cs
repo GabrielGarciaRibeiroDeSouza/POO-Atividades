@@ -7,6 +7,7 @@ namespace ControleEstoque
 {
     class Produto
     {
+        //prop
         //Delcaração de variaveis
         public string Nome;
         public double Preco;
