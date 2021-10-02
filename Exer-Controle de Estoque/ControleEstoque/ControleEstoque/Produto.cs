@@ -42,7 +42,7 @@ namespace ControleEstoque
         public override string ToString()
         {
             return Nome + ", R$ " + Preco.ToString("F2", CultureInfo.InvariantCulture) + ", " + Quantidade 
-            + " unidades, Total: R$ " + ValorTotalEmEstoque().ToString("F2", CultureInfo.InvariantCulture);
+            + " unidades, Total: R$ "+ ValorTotalEmEstoque().ToString("F2", CultureInfo.InvariantCulture);
         }
     }
 }
