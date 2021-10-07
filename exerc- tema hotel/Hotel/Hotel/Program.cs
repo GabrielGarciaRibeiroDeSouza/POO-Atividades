@@ -12,6 +12,7 @@ namespace Hotel
             
             // recebe a quatidade de quartos que usuario inserir
             Console.WriteLine("Quantos quartos serão alugados? ");
+            Console.WriteLine("o maximo é 9!");
             int n = int.Parse(Console.ReadLine());
 
             //nesse for o usuario digita os dados do hospede
