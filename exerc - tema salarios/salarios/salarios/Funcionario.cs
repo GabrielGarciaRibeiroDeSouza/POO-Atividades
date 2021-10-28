@@ -11,7 +11,7 @@ namespace salarios
         public string Nome { get;private set; }
         public double Salario { get;private set; }
 
-        //construtor com 3 parâmetros
+        //construtor com 3 parâmetros 
         public Funcionario(int id, string nome, double salario)
         {
             Id = id;

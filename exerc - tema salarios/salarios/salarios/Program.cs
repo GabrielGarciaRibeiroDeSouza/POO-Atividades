@@ -18,7 +18,7 @@ namespace salarios
             double[] setSalario = new double[n];
 
             //cria um array com o tamnho de n
-            Funcionario[] vectF = new Funcionario[n];
+            Funcionario[] vectF = new Funcionario[n]; 
             
             //o usuario digita as informações dos funcionarios
             for (int i = 0; i < n; i++)
