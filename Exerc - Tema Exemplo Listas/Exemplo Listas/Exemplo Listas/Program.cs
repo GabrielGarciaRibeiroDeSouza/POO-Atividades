@@ -17,7 +17,8 @@ namespace Exemplo_Listas
 
             //adicionando mais um elemento na posição informada
             list.Insert(2, "Lucas");
-
+            
+            //esse loop mostra os itens da lista
             foreach (string obj in list)
             {
                 Console.WriteLine(obj);
