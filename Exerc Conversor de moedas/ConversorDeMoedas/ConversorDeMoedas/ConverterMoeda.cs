@@ -17,11 +17,11 @@ namespace ConversorDeMoedas
         private double total;
 
         //construtor com 2 parametros
-        public ConverterMoeda(double dolar, double compraDolar)
+        public ConverterMoeda(double dolar, double compraDolar, double iof)
         {
             Dolar = dolar;
             CompraDolar = compraDolar;
-            IOF = 2.95;
+            IOF = iof;
         }
 
         //função para fazer o calculo da converção
