@@ -38,7 +38,7 @@ namespace ConversorDeMoedas
                 + "R$" + Dolar.ToString("F2", CultureInfo.InvariantCulture)
 
                 + "\nQuantos dolar você irá comprar? "
-                + "R$" + CompraDolar.ToString("F1", CultureInfo.InvariantCulture)
+                + "R$" + CompraDolar.ToString("F2", CultureInfo.InvariantCulture)
 
                 + "\nValor a ser pago em Reais: "
                 + "R$" + dinheiroBruto.ToString("F2", CultureInfo.InvariantCulture)
