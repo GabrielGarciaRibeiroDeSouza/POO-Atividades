@@ -45,7 +45,7 @@ namespace ConversorDeMoedas
 
                 + "\nValor do IOF: "
                 + IOF.ToString("F2", CultureInfo.InvariantCulture) + "%"
-
+             
                 + "\nValor Total da compra com IOF: "
                 + "R$" + total.ToString("F2", CultureInfo.InvariantCulture);
         }

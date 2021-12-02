@@ -35,6 +35,7 @@ namespace ConversorDeMoedas
             Valor da Cotação do dolar comercial no dia:25/11/21 é de: 5,57 em Sorocaba.
             Link:https://www.melhorcambio.com/dolar-hoje
             */
+
         }
     }
 }
